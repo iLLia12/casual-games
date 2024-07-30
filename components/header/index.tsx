@@ -6,9 +6,11 @@ function handleScroll() {
   if (window.scrollY > 50) {
     header?.classList.add("h-12");
     header?.classList.remove("h-20");
+    header?.classList.add("text-xs");
   } else {
     header?.classList.remove("h-12");
     header?.classList.add("h-20");
+    header?.classList.remove("text-xs");
   }
 }
 
