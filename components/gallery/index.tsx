@@ -20,8 +20,7 @@ export default function Gallery() {
           </div>
           <div className="flex justify-center text-lg mb-6 text-center mt-6 italic">
             is simply dummy text of the printing and typesetting industry. Lorem
-            Ipsum has been the industry's standard dummy text ever since the
-            1500s
+            Ipsum has been the industry standard dummy text ever since the 1500s
           </div>
         </div>
         <div className="rounded-md h-[300px] bg-[#fee7b9] overflow-hidden relative">
