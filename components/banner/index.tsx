@@ -1,7 +1,17 @@
 "use client";
-import Image from "next/image";
+import { Press_Start_2P, Bangers } from "next/font/google";
 import { ParallaxBanner } from "react-scroll-parallax";
 import { ParallaxProvider } from "react-scroll-parallax";
+
+const pressStart2P = Press_Start_2P({
+  subsets: ["latin"],
+  weight: "400",
+});
+
+const bangers = Bangers({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export default function Banner() {
   return (
@@ -27,14 +37,16 @@ export default function Banner() {
               children: (
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center" style={{ width: "400px" }}>
-                    <h1 className="text-8xl text-white font-bold inline-block">
+                    <h1
+                      className={`text-8xl text-white  inline-block ${bangers.className}`}
+                    >
                       Hello World!
                     </h1>
                     <div
                       style={{
                         background: "rgba(0, 0, 0, 0.51)",
                       }}
-                      className="rounded-md p-4"
+                      className={`rounded-md text-xs p-4 ${pressStart2P.className}`}
                     >
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industry
