@@ -18,16 +18,58 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: hsl(32deg 100% 49%);
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.main-banner {
+  /* background-image: linear-gradient(
+    170deg,
+    #fa8500 1%,
+    hsl(27deg 95% 62%) 42%,
+    #fba35b 49%,
+    hsl(28deg 95% 71%) 51%,
+    hsl(29deg 95% 75%) 51%,
+    #fdc991 50%,
+    hsl(33deg 96% 81%) 49%,
+    hsl(36deg 97% 83%) 49%,
+    #fee7b9 51%,
+    hsl(46deg 98% 88%) 58%,
+    hsl(53deg 100% 90%) 99%
+  ); */
+
+  background-image: linear-gradient(
+    170deg,
+    hsl(32deg 100% 32%) 1%,
+    hsl(32deg 100% 32%) 43%,
+    hsl(32deg 100% 32%) 50%,
+    hsl(32deg 100% 32%) 51%,
+    hsl(32deg 100% 32%) 51%,
+    hsl(32deg 100% 32%) 49%,
+    hsl(32deg 100% 32%) 49%,
+    hsl(32deg 100% 32%) 50%,
+    hsl(32deg 100% 32%) 57%,
+    hsl(32deg 100% 32%) 99%
+  );
+}
+
+.footer {
+  /* background-image: linear-gradient(
+    170deg,
+    hsl(0deg 0% 31%) 1%,
+    hsl(137deg 0% 28%) 43%,
+    hsl(136deg 0% 24%) 50%,
+    hsl(136deg 0% 21%) 51%,
+    hsl(135deg 0% 18%) 51%,
+    hsl(133deg 0% 15%) 49%,
+    hsl(130deg 0% 12%) 49%,
+    hsl(123deg 0% 9%) 50%,
+    hsl(123deg 0% 5%) 57%,
+    hsl(0deg 0% 0%) 99%
+  ); */
 }
